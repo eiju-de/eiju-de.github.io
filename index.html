@@ -10,16 +10,27 @@
       line-height: 1.5;
       margin: 20px;
       }
+    .zentriert {
+      text-align: center; /* Zentriert den Text */
+      }
     .gedicht {
       margin: 0;
       padding: 0;
       white-space: pre-wrap; /* Beibehaltung der Zeilenumbrüche */
     }
+    @media (max-width: 600px) {
+      body {
+        font-size: 14px; /* Kleinere Schriftgröße für kleine Displays */
+        }
+      .gedicht {
+        font-size: 14px; /* Kleinere Schriftgröße für das Gedicht auf kleinen Displays */
+        }
+      }
     </style>
     </head>
     <body>
-      <h1>Über die Geduld</h1>
-      <h3>Rainer Maria Rilke</h3>
+      <h1 class="zentriert">Über die Geduld</h1>
+      <h3 class="zentriert">Rainer Maria Rilke</h3>
       <p class="gedicht">
 Man muss den Dingen
 die eigene, stille
