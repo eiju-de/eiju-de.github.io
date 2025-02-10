@@ -5,71 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>eiju</title>
   <style>
+    /* Grundlegende Stile für die gesamte Seite */
     body {
-  font-family: Arial, sans-serif;
-  font-size: 16px; /* Standard-Schriftgröße */
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-.container {
-  background-color: #fff;
-  padding: 20px;
-  display: inline-block;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  text-decoration: none;
-  background-color: #4285F4;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-}
-.button:hover {
-  background-color: #357ae8;
-}
-h1 {
-  font-size: 24px; /* Schriftgröße der Überschrift */
-  text-align: left;
-  margin-top: 0;
-}
-.gedicht {
-  font-size: 16px; /* Schriftgröße des Haupttextes */
-  white-space: pre-wrap;
-  text-align: left;
-  margin: 20px 0;
-}
-@media (max-width: 600px) {
-  body {
-    font-size: 14px; /* Kleinere Schriftgröße auf mobilen Geräten */
-    align-items: flex-start;
-    min-height: auto;
-  }
-  h1 {
-    font-size: 20px; /* Anpassung der Überschrift auf mobilen Geräten */
-  }
-  .gedicht {
-    font-size: 14px; /* Anpassung des Textes auf mobilen Geräten */
-  }
-  .container {
-    width: 100%;
-    box-sizing: border-box;
-    display: block;
-  }
-  .button {
-    top: 10px;
-    left: 10px;
-    padding: 8px 12px;
-  }
-}
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Container, der den Inhalt zentriert */
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      display: inline-block;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style für den Button */
+    .button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      background-color: #4285F4;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease; /* Smoothes Hover-Effekt */
+    }
+    .button:hover {
+      background-color: #357ae8;
+    }
+
+    /* Gemeinsame Stile für Überschrift und Gedicht */
+    h1, .gedicht {
+      margin: 0;
+      text-align: left; /* Standardmäßig linksbündig, aber zur Klarheit belassen */
+    }
+
+    /* Spezifische Stile für die Überschrift */
+    h1 {
+      font-size: 1.5em; /* Verwendung relativer Einheiten */
+      margin-bottom: 20px; /* Abstand zum folgenden Inhalt */
+    }
+
+    /* Stile für den Gedicht-Text */
+    .gedicht {
+      white-space: pre-wrap;
+      font-size: 1em; /* Relativ zur Schriftgröße des Bodys */
+    }
+
+    /* Responsive Anpassungen für mobile Geräte */
+    @media (max-width: 600px) {
+      body {
+        font-size: 14px;
+        align-items: flex-start;
+        min-height: auto;
+      }
+      .container {
+        width: calc(100% - 40px); /* Berücksichtigt Padding für mobilen Rand */
+        box-sizing: border-box;
+        display: block;
+      }
+      .button {
+        top: 10px;
+        left: 10px;
+        padding: 8px 12px;
+      }
+      h1 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+      }
+      .gedicht {
+        font-size: 0.9em;
+      }
+    }
   </style>
 </head>
 <body>
