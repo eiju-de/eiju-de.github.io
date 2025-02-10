@@ -6,60 +6,70 @@
   <title>eiju</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      display: flex;
-      justify-content: center; /* Horizontale Zentrierung */
-      align-items: center;    /* Vertikale Zentrierung */
-      min-height: 100vh;      /* Gesamte Höhe des Viewports */
-    }
-    .container {
-      background-color: #fff;
-      padding: 20px;
-      display: inline-block;  /* Passt die Breite an den Inhalt an */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .button {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      text-decoration: none;
-      background-color: #4285F4;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
-    }
-    .button:hover {
-      background-color: #357ae8;
-    }
-    h1 {
-      text-align: left;
-      margin-top: 0;
-    }
-    .gedicht {
-      white-space: pre-wrap;
-      text-align: left;
-      margin: 20px 0;
-    }
-    @media (max-width: 600px) {
-      body {
-        align-items: flex-start; /* Inhalt beginnt oben auf kleinen Bildschirmen */
-        min-height: auto;
-      }
-      .container {
-        width: 100%;           /* Volle Breite auf kleinen Bildschirmen */
-        box-sizing: border-box;
-        display: block;        /* Standard-Blockverhalten */
-      }
-      .button {
-        top: 10px;
-        left: 10px;
-        padding: 8px 12px;
-      }
-    }
+  font-family: Arial, sans-serif;
+  font-size: 16px; /* Standard-Schriftgröße */
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  background-color: #fff;
+  padding: 20px;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  background-color: #4285F4;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #357ae8;
+}
+h1 {
+  font-size: 24px; /* Schriftgröße der Überschrift */
+  text-align: left;
+  margin-top: 0;
+}
+.gedicht {
+  font-size: 16px; /* Schriftgröße des Haupttextes */
+  white-space: pre-wrap;
+  text-align: left;
+  margin: 20px 0;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* Kleinere Schriftgröße auf mobilen Geräten */
+    align-items: flex-start;
+    min-height: auto;
+  }
+  h1 {
+    font-size: 20px; /* Anpassung der Überschrift auf mobilen Geräten */
+  }
+  .gedicht {
+    font-size: 14px; /* Anpassung des Textes auf mobilen Geräten */
+  }
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+  }
+  .button {
+    top: 10px;
+    left: 10px;
+    padding: 8px 12px;
+  }
+}
   </style>
 </head>
 <body>
