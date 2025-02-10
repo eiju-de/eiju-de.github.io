@@ -22,8 +22,8 @@
     /* Container, der den Inhalt zentriert */
     .container {
       padding: 0;
+      margin-top: 40px; /* Fügt Abstand zum oberen Rand hinzu */
       display: inline-block;
-      /* margin-top entfernt, da der Button wegfällt */
     }
 
     /* Gemeinsame Stile für Überschrift und Gedicht */
@@ -48,9 +48,11 @@
     @media (max-width: 600px) {
       body {
         font-size: 16px;
-        padding: 0;
+        padding: 10px; /* Etwas Padding auf kleinen Bildschirmen */
       }
-      /* .container benötigt keinen oberen Abstand mehr */
+      .container {
+        margin-top: 40px; /* Abstand auch auf kleinen Bildschirmen */
+      }
       h1 {
         font-size: 1.3em;
         margin-bottom: 15px;
