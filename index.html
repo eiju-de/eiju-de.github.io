@@ -10,17 +10,16 @@
       line-height: 1.5;
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
       background-color: #f9f9f9;
+      display: flex;
+      justify-content: center; /* Horizontale Zentrierung */
+      align-items: center;    /* Vertikale Zentrierung */
+      min-height: 100vh;      /* Gesamte Höhe des Viewports */
     }
     .container {
-      width: 80%;
-      max-width: 800px;
       background-color: #fff;
       padding: 20px;
+      display: inline-block;  /* Passt die Breite an den Inhalt an */
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     .button {
@@ -37,7 +36,7 @@
       background-color: #357ae8;
     }
     h1 {
-      text-align: left; /* Überschrift linksbündig */
+      text-align: left;
       margin-top: 0;
     }
     .gedicht {
@@ -46,9 +45,14 @@
       margin: 20px 0;
     }
     @media (max-width: 600px) {
+      body {
+        align-items: flex-start; /* Inhalt beginnt oben auf kleinen Bildschirmen */
+        min-height: auto;
+      }
       .container {
-        width: 95%;
-        padding: 10px;
+        width: 100%;           /* Volle Breite auf kleinen Bildschirmen */
+        box-sizing: border-box;
+        display: block;        /* Standard-Blockverhalten */
       }
       .button {
         top: 10px;
