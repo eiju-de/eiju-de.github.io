@@ -23,22 +23,7 @@
     .container {
       padding: 0;
       display: inline-block;
-    }
-
-    /* Style für den Button */
-    .button {
-      position: fixed; /* Fixiert den Button beim Scrollen */
-      top: 20px;
-      left: 20px;
-      text-decoration: none;
-      background-color: #4285F4;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    .button:hover {
-      background-color: #357ae8;
+      /* margin-top entfernt, da der Button wegfällt */
     }
 
     /* Gemeinsame Stile für Überschrift und Gedicht */
@@ -63,16 +48,9 @@
     @media (max-width: 600px) {
       body {
         font-size: 16px;
-        padding: 0; /* Entfernt das Padding auf kleinen Bildschirmen */
+        padding: 0;
       }
-      .button {
-        top: 10px;
-        left: 10px;
-        padding: 8px 12px;
-      }
-      .container {
-        margin-top: 60px; /* Fügt Abstand nach oben hinzu */
-      }
+      /* .container benötigt keinen oberen Abstand mehr */
       h1 {
         font-size: 1.3em;
         margin-bottom: 15px;
@@ -84,7 +62,6 @@
   </style>
 </head>
 <body>
-  <a href="seite2.html" class="button">+</a>
   <div class="container">
     <h1>eiju!</h1>
     <p class="gedicht">
