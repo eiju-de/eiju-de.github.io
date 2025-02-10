@@ -15,17 +15,14 @@
       background-color: #f9f9f9;
       display: flex;
       justify-content: center;
-      align-items: flex-start; /* Startet Inhalt oben */
+      align-items: flex-start;
       min-height: 100vh;
     }
 
     /* Container, der den Inhalt zentriert */
     .container {
-      /* Hintergrundfarbe und Schatten entfernt */
-      /* background-color: #fff; */
-      padding: 0; /* Padding kann hier entfernt werden, da es jetzt im Body ist */
+      padding: 0;
       display: inline-block;
-      /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     }
 
     /* Style für den Button */
@@ -38,7 +35,7 @@
       color: white;
       padding: 10px 15px;
       border-radius: 5px;
-      transition: background-color 0.3s ease; /* Smoothes Hover-Effekt */
+      transition: background-color 0.3s ease;
     }
     .button:hover {
       background-color: #357ae8;
@@ -66,7 +63,7 @@
     @media (max-width: 600px) {
       body {
         font-size: 14px;
-        padding: 10px;
+        padding: 0; /* Entfernt das Padding auf kleinen Bildschirmen */
       }
       .button {
         top: 10px;
