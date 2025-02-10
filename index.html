@@ -11,25 +11,26 @@
       font-size: 16px;
       line-height: 1.5;
       margin: 0;
-      padding: 0;
+      padding: 20px; /* Fügt Padding hinzu, damit der Inhalt nicht am Rand klebt */
       background-color: #f9f9f9;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start; /* Startet Inhalt oben */
       min-height: 100vh;
     }
 
     /* Container, der den Inhalt zentriert */
     .container {
-      background-color: #fff;
-      padding: 20px;
+      /* Hintergrundfarbe und Schatten entfernt */
+      /* background-color: #fff; */
+      padding: 0; /* Padding kann hier entfernt werden, da es jetzt im Body ist */
       display: inline-block;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     }
 
     /* Style für den Button */
     .button {
-      position: absolute;
+      position: fixed; /* Fixiert den Button beim Scrollen */
       top: 20px;
       left: 20px;
       text-decoration: none;
@@ -46,32 +47,26 @@
     /* Gemeinsame Stile für Überschrift und Gedicht */
     h1, .gedicht {
       margin: 0;
-      text-align: left; /* Standardmäßig linksbündig, aber zur Klarheit belassen */
+      text-align: left;
     }
 
     /* Spezifische Stile für die Überschrift */
     h1 {
-      font-size: 1.5em; /* Verwendung relativer Einheiten */
-      margin-bottom: 20px; /* Abstand zum folgenden Inhalt */
+      font-size: 1.5em;
+      margin-bottom: 20px;
     }
 
     /* Stile für den Gedicht-Text */
     .gedicht {
       white-space: pre-wrap;
-      font-size: 1em; /* Relativ zur Schriftgröße des Bodys */
+      font-size: 1em;
     }
 
     /* Responsive Anpassungen für mobile Geräte */
     @media (max-width: 600px) {
       body {
         font-size: 14px;
-        align-items: flex-start;
-        min-height: auto;
-      }
-      .container {
-        width: calc(100% - 40px); /* Berücksichtigt Padding für mobilen Rand */
-        box-sizing: border-box;
-        display: block;
+        padding: 10px;
       }
       .button {
         top: 10px;
