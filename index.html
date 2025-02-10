@@ -8,25 +8,25 @@
     body {
       font-family: Arial, sans-serif;
       line-height: 1.5;
-      margin: 20px;
+      margin: 0; /* Entfernt die Standard-Margen */
+      padding: 0; /* Entfernt die Standard-Abstände */
+      display: flex; /* Ermöglicht das Zentrieren des Inhalts */
+      justify-content: center; /* Zentriert horizontal */
+      align-items: center; /* Zentriert vertikal */
+      min-height: 100vh; /* Stellt sicher, dass der Body die gesamte Höhe einnimmt */
+      background-color: #f9f9f9; /* Sanfter Hintergrund für bessere Lesbarkeit */
     }
-    .zentriert {
-      text-align: center;
-    }
-    .gedicht-container {
-      width: 60%; /* Festgelegte Breite des Containers */
-      margin: 0 auto; /* Zentriert den Container horizontal */
-    }
-    .gedicht {
-      margin: 0;
-      padding: 0;
-      white-space: pre-wrap;
-      text-align: left; /* Text innerhalb des Containers linksbündig */
+    .container {
+      width: 80%; /* Festgelegte Breite des Containers */
+      max-width: 800px; /* Maximale Breite auf größeren Bildschirmen */
+      background-color: #fff; /* Weißer Hintergrund für den Container */
+      padding: 20px; /* Innenabstand für den Container */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Tiefe */
     }
     .button {
       position: absolute;
-      top: 10px;
-      left: 10px;
+      top: 20px;
+      left: 20px;
       text-decoration: none;
       background-color: #4285F4;
       color: white;
@@ -36,24 +36,32 @@
     .button:hover {
       background-color: #357ae8;
     }
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    .gedicht {
+      white-space: pre-wrap;
+      text-align: left;
+      margin: 20px 0;
+    }
     @media (max-width: 600px) {
-      body {
-        font-size: 14px;
+      .container {
+        width: 95%;
+        padding: 10px;
       }
-      .gedicht {
-        font-size: 14px;
-      }
-      .gedicht-container {
-        width: 90%; /* Anpassung für kleinere Bildschirme */
+      .button {
+        top: 10px;
+        left: 10px;
+        padding: 8px 12px;
       }
     }
   </style>
 </head>
 <body>
   <a href="seite2.html" class="button">+</a>
-  <h1 class="zentriert">eiju!</h1>
-  
-  <div class="gedicht-container">
+  <div class="container">
+    <h1>eiju!</h1>
     <p class="gedicht">
 Erzgebirgisch kann super-effizient sein.
 Bestes Beispiel: "Eiju".
@@ -65,8 +73,9 @@ Antwort: Ein kurzes "Eiju!" reicht.
 Sprach-Sparmeister im Erzgebirge!
 
 Fazit: Im Erzgebirge wird nicht gekleckert,
-sondern geklotzt – sprachlich gesehen! 
-Effizienz pur, verpackt in einem einzigen Wort.
+sondern geklotzt – sprachlich gesehen!
+Effizienz pur, verpackt
+in einem einzigen Wort.
 Warum lang plappern, wenn's kurz geht?
 Eben!
     </p>
