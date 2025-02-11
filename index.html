@@ -12,92 +12,92 @@
             line-height: 1.5;
             margin: 0;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: #f9f9f9; /* Hintergrundfarbe der Webseite (hellgrau) */
             display: flex;
             justify-content: center;
             align-items: flex-start;
             min-height: 100vh;
         }
 
-        /* Container, der den Inhalt zentriert */
+        /* Container, der den Inhalt zentriert und sich in den Hintergrund einfügt */
         .container {
-            padding: 20px; /* Padding für den Container-Inhalt hinzugefügt */
+            padding: 20px; /* Padding für den Container-Inhalt beibehalten */
             margin-top: 40px;
             display: inline-block;
-            background-color: #fff; /* Hintergrundfarbe für besseren Kontrast */
-            border-radius: 8px; /* Abgerundete Ecken für den Container */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Leichter Schatten für den Container */
+            background-color: #f9f9f9; /* Hintergrundfarbe des Containers an die Seitenfarbe angepasst */
+            /* border-radius: 8px;  Entfernt: Keine abgerundeten Ecken mehr */
+            /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); Entfernt: Kein Schatten mehr */
         }
 
-        /* Stile für den Wörterbucheintrag */
+        /* Stile für den Wörterbucheintrag (bleiben unverändert) */
         .lemma {
-            font-size: 1.8em; /* Größere Schrift für das Lemma */
-            font-weight: bold; /* Fettdruck für das Lemma */
-            margin-bottom: 10px; /* Abstand unterhalb des Lemmas */
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
         .aussprache {
-            font-style: italic; /* Kursiv für die Aussprache */
-            color: #777; /* Graue Farbe für die Aussprache */
-            margin-bottom: 10px; /* Abstand unterhalb der Aussprache */
+            font-style: italic;
+            color: #777;
+            margin-bottom: 10px;
         }
 
         .wortart {
-            font-style: italic; /* Kursiv für die Wortart */
-            color: #555; /* Etwas dunkleres Grau für die Wortart */
-            margin-bottom: 15px; /* Etwas mehr Abstand unterhalb der Wortart */
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
         }
 
         .definition-nummer {
-            font-weight: bold; /* Nummerierung der Definitionen fett */
-            margin-right: 5px; /* Abstand rechts von der Nummerierung */
-            vertical-align: top; /* Nummerierung oben ausrichten */
+            font-weight: bold;
+            margin-right: 5px;
+            vertical-align: top;
         }
 
         .definition-text {
-            display: inline-block; /* Text neben der Nummerierung anzeigen */
-            margin-bottom: 10px; /* Abstand unterhalb jeder Definition */
+            display: inline-block;
+            margin-bottom: 10px;
         }
 
         .herkunft {
-            font-size: 0.9em; /* Kleinere Schrift für die Herkunft */
-            color: #888; /* Hellere graue Farbe für die Herkunft */
-            font-style: italic; /* Kursiv für die Herkunft */
-            margin-top: 5px; /* Abstand oberhalb der Herkunft */
-            display: block; /* Herkunft unterhalb der Definition halten */
+            font-size: 0.9em;
+            color: #888;
+            font-style: italic;
+            margin-top: 5px;
+            display: block;
         }
 
         .beispiel {
-            font-style: italic; /* Kursiv für Beispiele */
-            margin-left: 20px; /* Einzug für Beispiele */
-            margin-bottom: 10px; /* Abstand unterhalb der Beispiele */
-            color: #666; /* Mittelgraue Farbe für Beispiele */
+            font-style: italic;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            color: #666;
         }
 
 
-        /* Responsive Anpassungen für mobile Geräte */
+        /* Responsive Anpassungen für mobile Geräte (bleiben unverändert) */
         @media (max-width: 600px) {
             body {
-                font-size: 14px; /* Kleinere Schriftgröße auf kleinen Bildschirmen */
+                font-size: 14px;
                 padding: 10px;
             }
             .container {
-                margin-top: 20px; /* Weniger Abstand oben auf kleinen Bildschirmen */
-                padding: 15px; /* Weniger Padding im Container auf kleinen Bildschirmen */
+                margin-top: 20px;
+                padding: 15px;
             }
             .lemma {
-                font-size: 1.6em; /* Lemma-Schriftgröße auf kleinen Bildschirmen etwas kleiner */
+                font-size: 1.6em;
                 margin-bottom: 8px;
             }
             .aussprache, .wortart {
-                margin-bottom: 8px; /* Weniger Abstand unter Aussprache/Wortart auf kleinen Bildschirmen */
+                margin-bottom: 8px;
             }
             .definition-text {
-                margin-bottom: 8px; /* Weniger Abstand unter Definitionen auf kleinen Bildschirmen */
+                margin-bottom: 8px;
             }
             .beispiel {
-                margin-left: 15px; /* Weniger Einzug für Beispiele auf kleinen Bildschirmen */
-                font-size: 0.95em; /* Kleinere Schrift für Beispiele auf kleinen Bildschirmen */
+                margin-left: 15px;
+                font-size: 0.95em;
             }
         }
     </style>
